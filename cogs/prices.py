@@ -101,10 +101,6 @@ class TicketSystem(commands.Cog):
         kaspi_emoji = discord.utils.get(ctx.guild.emojis, id=1174129648037273681)
         binance_emoji = discord.utils.get(ctx.guild.emojis, id=1174130863773061180)
         embed = discord.Embed(colour=0xFF0000)
-        embed.add_field(name=f"{qiwi_emoji} Qiwi:", value="+7 708 512 10 98\n Оплата по киви стоит дороже на 50р",
-                        inline=False)
-        embed.add_field(name=f"{kaspi_emoji} Kaspi:", value="4400 4302 4737 6384\n Бекзат Қ.", inline=False)
-        embed.add_field(name=f"{binance_emoji} Binance:", value="986 467 59\n Binance ID", inline=False)
         embed.set_author(name="Способы оплаты:")
         await ctx.send(embed=embed)
 
